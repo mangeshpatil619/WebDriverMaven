@@ -22,7 +22,8 @@ public class LoginTest {
     public void doLogin() {
         driver.get("http://gmail.com");
         driver.findElement(By.id("identifierId")).sendKeys("mangeshpatil619@gmail.com");
-        //driver.findElement(By.id("Passwd")).sendKeys("shaa@123");
+        driver.findElement(By.id("Passwd")).sendKeys("shaa@123");
+
 
     }
 
