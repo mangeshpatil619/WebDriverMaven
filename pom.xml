@@ -8,13 +8,16 @@
     <artifactId>maven-Example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <dependencies>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+        </configuration>
+    </plugin>
 
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.0</version>
-        </dependency>
+    <dependencies>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
